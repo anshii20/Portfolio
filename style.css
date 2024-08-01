@@ -24,7 +24,7 @@ body {
     hsla(304, 24%, 65%, 1) 0%,
     hsla(192, 17%, 94%, 1) 100%
   );
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: rgb(26, 5, 15);
   overflow-x: hidden;
 }
@@ -129,8 +129,8 @@ main .container .text h1 span {
   letter-spacing: 1px;
 }
 
-main .container .txt{
-    font-style: italic;
+main .container .txt {
+  font-style: italic;
 }
 
 .icons {
@@ -237,139 +237,146 @@ main .img img {
 }
 
 section {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .container1 {
-    width: 600px;
-    height: 500px;
-    padding: 45px 90px;
-    /* margin-left: 120px; */
-    margin-left: 13px;
-  }
-  .heading1 {
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 3px;
-    margin-bottom: 50px;
-  }
-  .bar {
-    font-size: 25px;
-  }
-  
-  .Technical-bars .bar {
-    margin-top: 20px;
-  }
-  .Technical-bars .bar:first-child {
-    margin-top: 0;
-  }
-  .Technical-bars .bar:last-child {
-    margin-bottom: 0;
-  }
-  .Technical-bars .bar .info {
-    margin-bottom: 5px;
-  }
-  .Technical-bars .bar .info span {
-    font-size: 19px;
-    font-weight: 600;
-    color: rgb(26, 5, 15);
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
-  }
-  
-  .Technical-bars .bar .progress-line {
-    position: relative;
-    border: 1px;
-    border-radius: 10px;
-    width: 180%;
-    height: 5.5px;
-    background-color: rgb(26, 5, 15);
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-  }
-  
-  .Technical-bars .bar .progress-line span {
-    height: 100%;
-    background-color: rgb(66, 161, 240);
-    position: absolute;
-    border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-  }
-  
-  .progress-line.html span {
-    width: 80%;
-  }
-  .progress-line.css span {
-    width: 70%;
-  }
-  .progress-line.javascript span {
-    width: 60%;
-  }
-  .progress-line.python span {
-    width: 60%;
-  }
-  .progress-line.mongodb span {
-    width: 50%;
-  }
-  .progress-line span::after {
-    position: absolute;
-    padding: 1px 8px;
-    background-color: rgb(26, 5, 15);
-    color: white;
-    font-size: 12px;
-    border-radius: 3px;
-    top: -28px;
-    right: -20px;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-  }
-  
-  .progress-line.html span::after {
-    content: "80%";
-  }
-  .progress-line.css span::after {
-    content: "70%";
-  }
-  .progress-line.javascript span::after {
-    content: "60%";
-  }
-  .progress-line.python span::after {
-    content: "60%";
-  }
-  .progress-line.mongodb span::after {
-    content: "50%";
-  }
-  
-  .progress-line span::before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-top-color: rgb(26, 5, 15);
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    top: -10px;
-    right: 0;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-  }
-  
-  @keyframes showText {
-    100% {
-      opacity: 1;
-    }
-  }
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  @keyframes animate {
-    100% {
-      transform: scaleX(1);
-    }
+.container1 {
+  width: 600px;
+  height: 500px;
+  padding: 45px 90px;
+  /* display: flex; */
+  /* margin: auto; */
+  /* margin-left: 120px; */
+  margin-left: 4px;
+}
+.heading1 {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+  margin-bottom: 50px;
+}
+.bar {
+  font-size: 25px;
+}
+
+.Technical-bars .bar {
+  margin-top: 20px;
+}
+.Technical-bars .bar:first-child {
+  margin-top: 0;
+}
+.Technical-bars .bar:last-child {
+  margin-bottom: 0;
+}
+.Technical-bars .bar .info {
+  margin-bottom: 5px;
+}
+.Technical-bars .bar .info span {
+  font-size: 19px;
+  font-weight: 600;
+  color: rgb(26, 5, 15);
+  animation: showText 1s linear forwards;
+  opacity: 0;
+}
+
+.Technical-bars .bar .progress-line {
+  position: relative;
+  border: 1px;
+  border-radius: 10px;
+  width: 180%;
+  height: 5.5px;
+  background-color: rgb(26, 5, 15);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10%;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.Technical-bars .bar .progress-line span {
+  height: 100%;
+  background-color: rgb(66, 161, 240);
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 5%;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.progress-line.html span {
+  width: 80%;
+}
+.progress-line.css span {
+  width: 70%;
+}
+.progress-line.javascript span {
+  width: 60%;
+}
+.progress-line.python span {
+  width: 60%;
+}
+.progress-line.mongodb span {
+  width: 65%;
+}
+.progress-line span::after {
+  position: absolute;
+  padding: 1px 8px;
+  background-color: rgb(26, 5, 15);
+  color: white;
+  font-size: 12px;
+  border-radius: 3px;
+  top: -28px;
+  right: -20px;
+  animation: showText 1s linear forwards;
+  opacity: 0;
+}
+
+.progress-line.html span::after {
+  content: "80%";
+}
+.progress-line.css span::after {
+  content: "70%";
+}
+.progress-line.javascript span::after {
+  content: "60%";
+}
+.progress-line.python span::after {
+  content: "60%";
+}
+.progress-line.mongodb span::after {
+  content: "65%";
+}
+
+.progress-line span::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-top-color: rgb(26, 5, 15);
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  top: -10px;
+  right: 0;
+  animation: showText 1.5s linear forwards;
+  opacity: 0;
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
   }
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
 /* .about .skills {
   width: 100%;
   margin: 0 auto;
@@ -850,8 +857,8 @@ header nav .burger:hover i {
   pointer-events: none;
 }
 
-.foot{
-    background-color: rgb(26, 5, 15);
+.foot {
+  background-color: rgb(26, 5, 15);
 }
 
 @media only screen and (max-width: 768px) {
@@ -922,7 +929,7 @@ header nav .burger:hover i {
     font-size: 22px;
   }
 
-  main .icons{
+  main .icons {
     display: flex;
     margin-top: -20px;
     padding-bottom: 21px;
@@ -933,7 +940,7 @@ header nav .burger:hover i {
     font-size: 3.5rem;
   }
 
-  main .container .txt  {
+  main .container .txt {
     font-size: 3.2rem;
     font-weight: 500;
   }
@@ -962,7 +969,8 @@ header nav .burger:hover i {
   }
 
   .about .container1 div {
-    width: 74%;
+    width: 85%;
+    margin-left: -6%;
     /* justify-content: center;
     align-items: center; */
   }
@@ -981,7 +989,7 @@ header nav .burger:hover i {
 
   .contact .wrapper {
     font-size: 20px;
-    margin-right: 43%;
+    margin-right: 20%;
   }
 
   .contact .wrapper i {
