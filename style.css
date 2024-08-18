@@ -289,8 +289,8 @@ section {
   height: 5.5px;
   background-color: rgb(26, 5, 15);
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 10%;
+  /* animation-timeline: view();
+  animation-range: entry 0% cover 10%; */
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -301,8 +301,8 @@ section {
   position: absolute;
   border-radius: 10px;
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 5%;
+  /* animation-timeline: view();
+  animation-range: entry 0% cover 5%; */
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -377,6 +377,7 @@ section {
     transform: scaleX(1);
   }
 }
+
 /* .about .skills {
   width: 100%;
   margin: 0 auto;
@@ -690,6 +691,7 @@ section {
   letter-spacing: 3px;
   text-decoration: underline;
   color: white;
+  /* margin-left: 33%; */
 }
 
 .contact h1::after {
@@ -707,7 +709,8 @@ section {
 
 .contact .wrapper {
   font-size: 20px;
-  margin-right: 60%;
+  margin-right: 50%;
+  /* margin: auto; */
 }
 
 .contact .wrapper .grp {
@@ -718,12 +721,13 @@ section {
   align-items: center;
   gap: 0.2rem;
 }
-
-/* .wrapper{
-  justify-content: left;
-  align-items: left;
-  text-align: left;
+/* 
+.wrapper{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 } */
+
 .wrapper a {
   text-decoration: none;
   color: white;
@@ -988,15 +992,26 @@ header nav .burger:hover i {
 
   .contact .wrapper {
     font-size: 20px;
-    margin-right: 20%;
+    /* margin-right: 20%; */
+    margin: auto;
   }
+
+  /* .contact h1{
+    margin-left: 15%;
+  } */
 
   .contact .wrapper i {
     font-size: 3vw;
   }
 
+  .wrapper {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   .contact span {
-    font-size: 3.3vw;
+    font-size: 3.2vw;
   }
 
   /* .contact .footer p{
