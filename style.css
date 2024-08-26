@@ -293,8 +293,8 @@ section {
   position: relative;
   border: 1px;
   border-radius: 10px;
-  width: 120%;
-  margin-left: -75px;
+  width: 100%;
+  /* margin-left: -75px; */
   height: 5.5px;
   background-color: rgb(26, 5, 15);
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
@@ -1002,8 +1002,9 @@ header nav .burger:hover i {
   /* margin: auto; */
   /* height: 600px; 
   } */
-  .Technical-bars .bar .progress-line {
-    width: 180%;
+  .Technical-bars {
+    width: 400px;
+    margin-left: -70px;
   }
 
   /* .Technical-bars{
