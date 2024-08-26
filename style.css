@@ -1003,8 +1003,8 @@ header nav .burger:hover i {
   /* height: 600px; 
   } */
   .Technical-bars {
-    width: 400px;
-    margin-left: -70px;
+    width: 150%;
+    margin-left: -65px;
   }
 
   /* .Technical-bars{
