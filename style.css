@@ -438,14 +438,15 @@ section {
   /* font-size: 30px; */
   color: rgb(26, 5, 15);
   /* font-weight: 500; */
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   width: 70%;
   /* margin-left: 20px; */
 }
 
 .education h2 {
-  font-size: 40px;
+  font-size: 43px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 /* .education-container {
@@ -1016,6 +1017,10 @@ header nav .burger:hover i {
     font-weight: 500;
   } */
 
+  .education-item {
+    margin-top: 1rem;
+    margin-bottom: 1px;
+  }
   .contact .wrapper {
     font-size: 20px;
     /* margin-right: 20%; */
