@@ -1007,7 +1007,7 @@ header nav .burger:hover i {
   } */
   .Technical-bars {
     width: 150%;
-    /* margin-left: -55px; */
+    margin-left: -65px;
     grid-template-columns: 1fr;
   }
 
