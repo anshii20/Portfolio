@@ -1002,11 +1002,17 @@ header nav .burger:hover i {
   /* margin: auto; */
   /* height: 600px; 
   } */
-  /* .Technical-bars {
-    width: 150%;
-    margin-left: -65px;
+   
+  .Technical-bars {
+    width: 120%;
+    display: flexbox;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: -65px; */
     grid-template-columns: 1fr;
-  } */
+  }
 
   /* .Technical-bars{
     width: 150%;
